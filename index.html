@@ -16,6 +16,7 @@
         <li>Elemento B</li>
         <li>Elemento C</li>
     </ul>
+
     <table border="1">
         <tr>
             <th>Nombre</th>
@@ -25,12 +26,24 @@
             <td>DUVAN</td>
             <td>25</td>
         </tr>
-        </table>
+    </table>
+
     <a href="https://www.google.com" target="_blank">Ir a Google</a>
     <img src="nitrosen.jpg" alt="ACER LOGO" width="300">
+
     <button style="background-color: #007BFF; color: white; font-size: 16px; padding: 10px;">
         Comprar ahora
     </button>
+
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Enviar</button>
+    </form>
 
 </body>
 </html>
