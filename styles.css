@@ -8,9 +8,13 @@ body {
 
  
 /* Cambia el tamaño del texto en pantallas pequeñas */
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
+@media screen and (max-width: 1000px) {
+    body::before {
+        content: "Modo móvil activo";
+        display: block;
+        color: red;
+        font-size: 20px;
+        text-align: center;
     }
 }
 
