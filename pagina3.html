@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Integrado de HTML</title>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formulario">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección de información -->
+        <section id="quienes-somos">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos una empresa dedicada a la enseñanza del desarrollo web.</p>
+            <figure>
+                <img src="imagen.jpg" alt="Nuestra empresa" width="400">
+                <figcaption>Foto de nuestras oficinas</figcaption>
+            </figure>
+        </section>
+
+        <!-- Sección de multimedia -->
+        <section id="multimedia">
+            <h2>Galería Multimedia</h2>
+
+            <!-- Video -->
+            <h3>Video Institucional</h3>
+            <video width="400" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+
+            <!-- Audio -->
+            <h3>Podcast</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta la etiqueta de audio.
+            </audio>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="formulario">
+            <h2>Contáctanos</h2>
+            <form action="procesar.php" method="post">
+
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="fecha">Fecha de contacto:</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="mx">México</option>
+                        <option value="es">España</option>
+                        <option value="ar">Argentina</option>
+                    </select>
+
+                    <label>Preferencias de contacto:</label>
+                    <input type="checkbox" id="whatsapp" name="contacto" value="whatsapp">
+                    <label for="whatsapp">WhatsApp</label>
+
+                    <input type="checkbox" id="email" name="contacto" value="email">
+                    <label for="email">Email</label>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Sección de contenido externo -->
+    <aside>
+        <h2>Nuestro Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345083646!2d144.95592831531594!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f133ff%3A0x2ba5a68f59c9f3dd!2sFederation+Square!5e0!3m2!1sen!2sus!4v1634113781890!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <h2>Síguenos en Twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a>
+        <script async src="https://platform.twitter.com/widgets.js"></script>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Mi Página Web</p>
+    </footer>
+
+</body>
+</html>
