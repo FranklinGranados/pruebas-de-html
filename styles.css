@@ -4,8 +4,12 @@ body {
 	font-size: 18px;
 }
 
-    
 
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
  
 /* Cambia el tamaño del texto en pantallas pequeñas */
 @media screen and (max-width: 1000px) {
