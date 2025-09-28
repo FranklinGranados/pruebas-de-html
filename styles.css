@@ -37,6 +37,18 @@ a {
   font-weight: bold;
 }
     */
+.pseudoclase a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.pseudoclase a:hover  {
+    color: red;
+    
+}
+
+
 /* Encabezado y Navegación */
 header {
     background-color: #333;
