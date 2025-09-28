@@ -48,7 +48,15 @@ a {
     
 }
 
+.decorado::before {
+    content: "👉 ";
+    color: orange;
+}
 
+.decorado::after {
+    content: " ✅";
+    color: green;
+}
 /* Encabezado y Navegación */
 header {
     background-color: #333;
@@ -155,3 +163,35 @@ footer {
         width: 80%;
     }
 }
+
+/* Estructura básica del menú */
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+}
+
+    ul.menu li {
+        margin: 0;
+    }
+
+        /* Enlaces del menú */
+        ul.menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+            /* Cambio de color al pasar el mouse */
+            ul.menu li a:hover {
+                background-color: #555;
+            }
+            ul.menu li a::before {
+                content: "➤ ";
+                color: #ffcc00;
+                margin-right: 5px;
+            }
